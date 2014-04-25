@@ -25,15 +25,16 @@ Basic data-binding is possible via the System.Data.IDataReader interface impleme
 
 You can specify custom values for these parameters:
 
-Default missing field action;
-Default malformed CSV action;
-Buffer size;
-Field headers option;
-Trimming spaces option;
-Field delimiter character;
-Quote character;
-Escape character (can be the same as the quote character);
-Commented line character.
+* Default missing field action;
+* Default malformed CSV action;
+* Buffer size;
+* Field headers option;
+* Trimming spaces option;
+* Field delimiter character;
+* Quote character;
+* Escape character (can be the same as the quote character);
+* Commented line character.
+
 If the CSV contains field headers, they can be used to access a specific field.
 
 When the CSV data appears to be malformed, the reader will fail fast and throw a meaningful exception stating where the error occurred and providing the current content of the buffer.
